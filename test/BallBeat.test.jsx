@@ -13,8 +13,6 @@ describe("<BallBeat>", () => {
     test("BallBeat should match snapshot", () => {
         const { container } = render(<BallBeat loading={true} />);
 
-        console.dir(container, { depth: null })
-
         expect(container.firstChild).toMatchSnapshot();
     });
 
