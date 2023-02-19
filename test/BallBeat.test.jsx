@@ -20,7 +20,7 @@ describe("<BallBeat>", () => {
         render(<BallBeat loading={true} />);
         const { container } = render(<BallBeat loading={true} />);
 
-        expect(container.firstChild).toHaveStyle("background-color", PRIMARY_COLOR, {
+        expect(container.firstChild).toHaveStyleRule("background-color", PRIMARY_COLOR, {
             target: "> div"
         });
     });
