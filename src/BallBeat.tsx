@@ -4,15 +4,18 @@ import style from "./style";
 import { BaseProps } from "./types";
 
 export default function BallBeat({ color, loading }: BaseProps) {
-    if (loading) {
-        return (
-            <div css={style(color)}>
-                <div />
-                <div />
-                <div />
-            </div>
-        );
-    }
+  if (loading) {
+    return (
+      <div
+        css={style(color)}
+        data-testid="ball-beat-container"
+      >
+        <div />
+        <div />
+        <div />
+      </div>
+    );
+  }
 
-    return null;
+  return null;
 }
